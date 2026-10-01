@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Le Cercle Conviva — Devenez apporteur d'affaires | Conviva Voice</title>
+<meta name="description" content="Le Cercle réunit les apporteurs d'affaires indépendants qui font découvrir Sofia aux restaurateurs. Vous ouvrez la porte, Conviva signe, installe et accompagne. Formation, outils et suivi inclus.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.convivavoice.fr/le-cercle">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.convivavoice.fr/le-cercle">
+<meta property="og:title" content="Le Cercle Conviva — Faites des restaurants de votre ville votre métier">
+<meta property="og:description" content="Apporteur d'affaires indépendant pour Conviva Voice : vous repérez, vous présentez Sofia, vous transmettez. Nous signons, installons et accompagnons.">
+<meta property="og:image" content="https://www.convivavoice.fr/og-image-2026-09.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Conviva Voice">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2E9F3LFGWX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2E9F3LFGWX');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink:       #1C1B19;
+  --ink-mid:   #4A4742;
+  --ink-light: #9A9590;
+  --terra:     #B84A2A;
+  --terra-pale:#F5EDE8;
+  --cream:     #F8F5EF;
+  --white:     #FDFCFA;
+  --line:      rgba(28,27,25,0.10);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.4rem 5vw;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-right { display: flex; align-items: center; gap: 2rem; }
+.nav-right a {
+  color: var(--ink-mid); text-decoration: none;
+  font-size: 0.82rem; letter-spacing: 0.06em; font-weight: 400;
+  transition: color 0.2s;
+}
+.nav-right a:hover { color: var(--terra); }
+.nav-login { display: inline-flex; align-items: center; gap: 0.45rem; }
+.nav-login svg { width: 14px; height: 14px; }
+.nav-cta {
+  background: var(--ink); color: var(--cream) !important;
+  padding: 0.55rem 1.5rem; letter-spacing: 0.08em !important;
+  transition: background 0.2s !important;
+}
+.nav-cta:hover { background: var(--terra); }
+
+/* ─── COMMUNS ─── */
+section { padding: 6rem 7vw; }
+.container { max-width: 1180px; margin: 0 auto; }
+.s-label {
+  font-size: 0.68rem; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--terra);
+  margin-bottom: 1.2rem;
+}
+.s-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 300; line-height: 1.15;
+  color: var(--ink);
+}
+.s-title em { font-style: italic; color: var(--terra); }
+.s-rule { width: 36px; height: 1px; background: var(--terra); margin: 1.4rem 0; }
+.s-body { font-size: 1rem; font-weight: 300; color: var(--ink-mid); line-height: 1.8; max-width: 560px; }
+
+.btn-fill {
+  background: var(--ink); color: var(--cream);
+  padding: 0.85rem 2rem; font-size: 0.88rem;
+  font-family: 'Inter', -apple-system, sans-serif; font-weight: 400;
+  letter-spacing: 0.06em; border: none; cursor: pointer;
+  text-decoration: none; display: inline-block;
+  transition: background 0.2s;
+}
+.btn-fill:hover { background: var(--terra); }
+.btn-line {
+  background: transparent; color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 0.85rem 2rem; font-size: 0.88rem;
+  font-family: 'Inter', -apple-system, sans-serif; font-weight: 300;
+  letter-spacing: 0.06em; cursor: pointer;
+  text-decoration: none; display: inline-block;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-line:hover { border-color: var(--terra); color: var(--terra); }
+
+@keyframes reveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s, transform 0.7s; }
+.reveal.on { opacity: 1; transform: none; }
+
+/* ─── HERO ─── */
+#hero {
+  min-height: 100vh;
+  background: var(--white);
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  padding: 5.5rem 0 0;
+}
+.hero-left {
+  padding: 6vw 5vw 5vw 7vw;
+  display: flex; flex-direction: column; justify-content: center;
+  border-right: 1px solid var(--line);
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 0.8rem;
+  font-size: 0.72rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--terra);
+  margin-bottom: 2rem;
+  opacity: 0; animation: reveal 0.8s 0.1s forwards;
+}
+.hero-eyebrow::before { content: ""; display: block; width: 28px; height: 1px; background: var(--terra); }
+.hero-h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(2.8rem, 5.4vw, 5rem);
+  font-weight: 300; line-height: 1.05; letter-spacing: -0.015em;
+  opacity: 0; animation: reveal 0.9s 0.25s forwards;
+}
+.hero-h1 em { font-style: italic; color: var(--terra); display: block; }
+.hero-rule { width: 40px; height: 1px; background: var(--terra); margin: 2.2rem 0; opacity: 0; animation: reveal 0.7s 0.4s forwards; }
+.hero-sub {
+  font-size: 1.05rem; font-weight: 300;
+  color: var(--ink-mid); line-height: 1.75; max-width: 470px;
+  opacity: 0; animation: reveal 0.8s 0.5s forwards;
+}
+.hero-actions { display: flex; gap: 1rem; margin-top: 2.8rem; flex-wrap: wrap; opacity: 0; animation: reveal 0.8s 0.65s forwards; }
+
+.hero-right {
+  padding: 5vw;
+  display: flex; flex-direction: column; justify-content: center; gap: 2.4rem;
+  background: var(--terra-pale);
+  opacity: 0; animation: reveal 1s 0.3s forwards;
+}
+.hero-quote {
+  font-family: 'Fraunces', Georgia, serif; font-style: italic;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem); font-weight: 300; line-height: 1.3;
+  color: var(--ink);
+}
+.hero-quote-note { font-size: 0.85rem; color: var(--ink-mid); font-weight: 300; line-height: 1.6; margin-top: 0.9rem; }
+.pillars { border-top: 1px solid rgba(184,74,42,0.18); }
+.pillar {
+  display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.4rem 1rem;
+  padding: 1.3rem 0; border-bottom: 1px solid rgba(184,74,42,0.18);
+}
+.pillar-n { font-family: 'Fraunces', Georgia, serif; font-size: 0.85rem; color: var(--terra); padding-top: 0.15rem; }
+.pillar h3 { font-size: 0.98rem; font-weight: 500; }
+.pillar p { grid-column: 2; font-size: 0.86rem; color: var(--ink-mid); font-weight: 300; line-height: 1.6; }
+
+/* ─── LA MAISON ─── */
+#maison { background: var(--cream); }
+.maison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.values { margin-top: 0.4rem; border-top: 1px solid var(--line); }
+.value { padding: 1.6rem 0; border-bottom: 1px solid var(--line); }
+.value h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 1.3rem; margin-bottom: 0.45rem; }
+.value h3 em { color: var(--terra); }
+.value p { font-size: 0.92rem; color: var(--ink-mid); font-weight: 300; line-height: 1.7; }
+
+/* ─── LE RÔLE ─── */
+#role { background: var(--ink); }
+#role .s-title { color: var(--cream); }
+#role .s-body { color: rgba(248,245,239,0.6); }
+.role-split { display: grid; grid-template-columns: 1fr 1fr; margin-top: 3.5rem; border: 1px solid rgba(248,245,239,0.12); }
+.role-col { padding: 2.6rem 2.4rem; }
+.role-col + .role-col { border-left: 1px solid rgba(248,245,239,0.12); background: rgba(248,245,239,0.03); }
+.role-col h3 {
+  font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--terra); margin-bottom: 1.6rem; font-weight: 500;
+}
+.role-col ol { list-style: none; counter-reset: r; }
+.role-col li {
+  counter-increment: r; position: relative;
+  padding: 0 0 1.15rem 2.2rem;
+  color: rgba(248,245,239,0.85); font-size: 0.95rem; font-weight: 300; line-height: 1.6;
+}
+.role-col li::before {
+  content: counter(r, decimal-leading-zero);
+  position: absolute; left: 0; top: 0.1rem;
+  font-family: 'Fraunces', Georgia, serif; font-size: 0.8rem; color: var(--terra);
+}
+.role-col li b { color: var(--cream); font-weight: 500; }
+.role-note {
+  margin-top: 2rem; font-size: 0.9rem; font-weight: 300; line-height: 1.7;
+  color: rgba(248,245,239,0.55); max-width: 760px;
+}
+.role-note b { color: var(--cream); font-weight: 500; }
+
+/* ─── PARCOURS ─── */
+#parcours { background: var(--white); }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 3.5rem; border-top: 1px solid var(--line); }
+.step { padding: 2.5rem 2rem 2rem; border-right: 1px solid var(--line); position: relative; }
+.step:last-child { border-right: none; }
+.step::before { content: ""; position: absolute; top: 0; left: 2rem; width: 24px; height: 2px; background: var(--terra); }
+.step-num { font-family: 'Fraunces', Georgia, serif; font-size: 0.8rem; color: var(--terra); letter-spacing: 0.1em; margin-bottom: 1.2rem; display: block; }
+.step h3 { font-size: 0.98rem; font-weight: 500; margin-bottom: 0.55rem; }
+.step p { font-size: 0.86rem; color: var(--ink-mid); line-height: 1.65; font-weight: 300; }
+
+/* ─── L'ESPACE ─── */
+#espace { background: var(--cream); }
+.espace-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 4.5rem; align-items: center; }
+.espace-list { list-style: none; margin-top: 2rem; border-top: 1px solid var(--line); }
+.espace-list li { padding: 1rem 0 1rem 1.6rem; border-bottom: 1px solid var(--line); font-size: 0.93rem; font-weight: 300; color: var(--ink-mid); line-height: 1.6; position: relative; }
+.espace-list li::before { content: ""; position: absolute; left: 0; top: 1.6rem; width: 10px; height: 1px; background: var(--terra); }
+.espace-list li b { color: var(--ink); font-weight: 500; }
+
+.app {
+  background: var(--white); border: 1px solid var(--line);
+  box-shadow: 0 30px 60px rgba(28,27,25,0.08);
+}
+.app-bar { display: flex; align-items: center; gap: 0.45rem; padding: 0.8rem 1rem; border-bottom: 1px solid var(--line); }
+.app-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); display: block; }
+.app-bar span { margin-left: 0.6rem; font-size: 0.72rem; color: var(--ink-light); letter-spacing: 0.04em; }
+.app-tabs { display: flex; gap: 1.3rem; padding: 0.9rem 1.3rem 0; border-bottom: 1px solid var(--line); font-size: 0.75rem; color: var(--ink-light); overflow: hidden; white-space: nowrap; }
+.app-tabs b { color: var(--ink); font-weight: 500; border-bottom: 2px solid var(--terra); padding-bottom: 0.7rem; }
+.app-tabs span { padding-bottom: 0.7rem; }
+.app-body { padding: 1.1rem 1.3rem 1.3rem; }
+.app-hint { font-size: 0.75rem; color: var(--terra); background: var(--terra-pale); padding: 0.6rem 0.8rem; margin-bottom: 0.9rem; }
+.app-row {
+  display: grid; grid-template-columns: 1fr auto; gap: 0.25rem 1rem; align-items: center;
+  padding: 0.85rem 0; border-bottom: 1px solid var(--line);
+}
+.app-row:last-child { border-bottom: none; }
+.app-name { font-family: 'Fraunces', Georgia, serif; font-size: 1rem; }
+.app-meta { grid-column: 1; font-size: 0.72rem; color: var(--ink-light); }
+.app-tag {
+  grid-row: 1 / span 2; grid-column: 2;
+  font-size: 0.68rem; letter-spacing: 0.06em; padding: 0.3rem 0.65rem;
+  border: 1px solid var(--line); color: var(--ink-mid); white-space: nowrap;
+}
+.app-tag.hot { border-color: var(--terra); color: var(--terra); }
+.app-tag.done { background: var(--ink); border-color: var(--ink); color: var(--cream); }
+.app-caption { font-size: 0.72rem; color: var(--ink-light); margin-top: 0.8rem; font-style: italic; }
+
+/* ─── REVENU ─── */
+#revenu { background: var(--terra-pale); }
+.revenu-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 3.5rem; border-top: 1px solid rgba(184,74,42,0.18); }
+.revenu-item { padding: 2.4rem 2.2rem 2rem 0; }
+.revenu-item + .revenu-item { padding-left: 2.2rem; border-left: 1px solid rgba(184,74,42,0.18); }
+.revenu-item h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 1.35rem; line-height: 1.25; margin-bottom: 0.8rem; }
+.revenu-item h3 em { color: var(--terra); }
+.revenu-item p { font-size: 0.9rem; color: var(--ink-mid); font-weight: 300; line-height: 1.7; }
+.revenu-box {
+  margin-top: 2.6rem; padding: 1.6rem 1.8rem;
+  background: var(--white); border-left: 2px solid var(--terra);
+  display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+}
+.revenu-box p { font-size: 0.93rem; color: var(--ink-mid); font-weight: 300; line-height: 1.7; max-width: 680px; }
+.revenu-box p b { color: var(--ink); font-weight: 500; }
+
+/* ─── PROFILS ─── */
+#profils { background: var(--white); }
+.profils-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 3.5rem; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.profil { padding: 2rem 1.8rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.profil h3 { font-size: 0.98rem; font-weight: 500; margin-bottom: 0.45rem; }
+.profil p { font-size: 0.86rem; color: var(--ink-mid); font-weight: 300; line-height: 1.65; }
+.profils-must { margin-top: 2.4rem; font-size: 0.93rem; color: var(--ink-mid); font-weight: 300; line-height: 1.75; max-width: 760px; }
+.profils-must b { color: var(--ink); font-weight: 500; }
+
+/* ─── FAQ ─── */
+#faq { background: var(--cream); }
+.faq-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 4.5rem; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary {
+  list-style: none; cursor: pointer;
+  padding: 1.35rem 2.5rem 1.35rem 0; position: relative;
+  font-family: 'Fraunces', Georgia, serif; font-size: 1.12rem; font-weight: 400;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after {
+  content: "+"; position: absolute; right: 0.2rem; top: 1.2rem;
+  font-family: 'Inter', sans-serif; font-weight: 300; font-size: 1.4rem; color: var(--terra);
+  transition: transform 0.2s;
+}
+.faq-list details[open] summary::after { transform: rotate(45deg); }
+.faq-list details p { padding: 0 2.5rem 1.4rem 0; font-size: 0.92rem; color: var(--ink-mid); font-weight: 300; line-height: 1.75; }
+.faq-list details p a { color: var(--terra); }
+.nowrap { white-space: nowrap; }
+
+/* ─── CANDIDATURE ─── */
+#candidature { background: var(--ink); }
+#candidature .s-title { color: var(--cream); }
+#candidature .s-body { color: rgba(248,245,239,0.6); }
+.cand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.cand-direct { margin-top: 2.2rem; display: grid; gap: 0.8rem; }
+.cand-direct a { color: var(--cream); text-decoration: none; font-size: 0.95rem; font-weight: 300; }
+.cand-direct a span { color: var(--terra); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; display: block; margin-bottom: 0.2rem; }
+.cand-direct a:hover { color: var(--terra); }
+.cand-form { display: grid; gap: 0.8rem; }
+.cand-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.cand-input {
+  width: 100%; padding: 0.95rem 1.1rem;
+  background: rgba(248,245,239,0.05); border: 1px solid rgba(248,245,239,0.16);
+  color: var(--cream); font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 300;
+  outline: none; transition: border-color 0.2s; border-radius: 0;
+}
+.cand-input::placeholder { color: rgba(248,245,239,0.4); }
+.cand-input:focus { border-color: var(--terra); }
+select.cand-input { appearance: none; -webkit-appearance: none; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, var(--terra) 50%), linear-gradient(135deg, var(--terra) 50%, transparent 50%);
+  background-position: calc(100% - 20px) 52%, calc(100% - 15px) 52%;
+  background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; }
+select.cand-input:invalid { color: rgba(248,245,239,0.4); }
+select.cand-input option { color: var(--ink); background: var(--white); }
+textarea.cand-input { min-height: 110px; resize: vertical; }
+.cand-form .btn-fill { background: var(--terra); padding: 1rem 2rem; margin-top: 0.4rem; }
+.cand-form .btn-fill:hover { background: #9c3d21; }
+.cand-form .btn-fill:disabled { cursor: default; }
+.cand-note { font-size: 0.77rem; color: rgba(248,245,239,0.4); line-height: 1.6; }
+
+/* ─── FOOTER ─── */
+footer { background: var(--ink); padding: 3rem 7vw 2.2rem; border-top: 1px solid rgba(248,245,239,0.08); }
+.f-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem; align-items: start; }
+.f-tag { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 0.92rem; color: rgba(248,245,239,0.45); margin-top: 1rem; max-width: 300px; }
+.f-col-h { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--terra); margin-bottom: 1.1rem; }
+.f-col a { display: block; color: rgba(248,245,239,0.55); font-size: 0.85rem; text-decoration: none; line-height: 1.5; margin-bottom: 0.6rem; transition: color 0.2s; }
+.f-col a:hover { color: var(--terra); }
+.f-bottom { margin-top: 3.2rem; padding-top: 1.4rem; border-top: 1px solid rgba(248,245,239,0.08); display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+.f-bottom p { font-size: 0.72rem; color: rgba(248,245,239,0.28); line-height: 1.6; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  #hero { grid-template-columns: 1fr; min-height: 0; }
+  .hero-left { border-right: none; padding: 4rem 7vw 3.5rem; }
+  .hero-right { padding: 3rem 7vw; }
+  .maison-grid, .espace-grid, .faq-grid, .cand-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .role-split { grid-template-columns: 1fr; }
+  .role-col + .role-col { border-left: none; border-top: 1px solid rgba(248,245,239,0.12); }
+  .steps { grid-template-columns: 1fr 1fr; }
+  .step:nth-child(2) { border-right: none; }
+  .step:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .revenu-grid { grid-template-columns: 1fr; }
+  .revenu-item, .revenu-item + .revenu-item { padding: 2rem 0; border-left: none; border-bottom: 1px solid rgba(184,74,42,0.18); }
+  .profils-grid { grid-template-columns: 1fr 1fr; }
+  .f-top { grid-template-columns: 1fr; gap: 2.4rem; }
+  .f-bottom { flex-direction: column; gap: 0.8rem; }
+}
+@media (max-width: 600px) {
+  section { padding: 4.5rem 6vw; }
+  nav { padding: 1rem 5vw; }
+  .nav-logo svg { width: 132px; height: auto; }
+  .nav-right { gap: 1rem; }
+  .nav-back { display: none; }
+  .nav-cta { padding: 0.5rem 0.9rem; }
+  #hero { padding-top: 4.4rem; }
+  .steps { grid-template-columns: 1fr; }
+  .step { border-right: none !important; border-bottom: 1px solid var(--line); }
+  .profils-grid { grid-template-columns: 1fr; }
+  .cand-row { grid-template-columns: 1fr; }
+  .role-col { padding: 2rem 1.4rem; }
+  .app-tabs span:nth-child(n+4) { display: none; }
+}
+@media (max-width: 380px) {
+  .nav-login span { display: none; }
+}
+a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font: inherit !important; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo" aria-label="Conviva Voice — accueil">
+    <svg width="160" height="44" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" aria-label="ConvivaVoice" role="img">
+      <g>
+        <circle cx="40" cy="40" r="36" fill="#B84A2A"/>
+        <rect x="28" y="19" width="24" height="5" fill="#FDFCFA" opacity="0.50"/>
+        <rect x="22" y="28" width="36" height="5" fill="#FDFCFA" opacity="0.75"/>
+        <rect x="17" y="37" width="46" height="6" fill="#FDFCFA" opacity="1.0"/>
+        <rect x="22" y="47" width="36" height="5" fill="#FDFCFA" opacity="0.75"/>
+        <rect x="28" y="56" width="24" height="5" fill="#FDFCFA" opacity="0.50"/>
+      </g>
+      <text x="90" y="54" font-family="Fraunces, Georgia, serif" font-size="38" font-weight="400"><tspan fill="#1C1B19">Conviva</tspan><tspan fill="#B84A2A" font-style="italic">Voice</tspan></text>
+    </svg>
+  </a>
+  <div class="nav-right">
+    <a href="/" class="nav-back">Retour à l'accueil</a>
+    <a href="https://conviva-partenaires.netlify.app/" class="nav-login" title="Espace partenaire — connexion">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3" y="7" width="10" height="7"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>
+      <span>Connexion</span>
+    </a>
+    <a href="#candidature" class="nav-cta">Rejoindre</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <span class="hero-eyebrow">Le Cercle — Apporteurs d'affaires</span>
+    <h1 class="hero-h1">
+      Vous connaissez les restaurants de votre ville.
+      <em>Faites-en un métier.</em>
+    </h1>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">
+      Le Cercle réunit les indépendants qui font découvrir Sofia aux restaurateurs.
+      Vous ouvrez la porte, Conviva signe, installe et accompagne.
+      Un rôle clair, des outils pensés pour vous, et une maison qui vous soutient à chaque étape.
+    </p>
+    <div class="hero-actions">
+      <a href="#candidature" class="btn-fill">Rejoindre le Cercle</a>
+      <a href="#role" class="btn-line">Découvrir le rôle</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div>
+      <p class="hero-quote">«&nbsp;Je travaille avec Conviva&nbsp;Voice.&nbsp;»</p>
+      <p class="hero-quote-note">C'est tout ce que vous avez à dire pour commencer. Le reste, on vous l'apprend.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar-n">01</span>
+        <h3>Indépendant</h3>
+        <p>Votre secteur, votre agenda, votre rythme. Possible en complément d'une autre activité.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-n">02</span>
+        <h3>Accompagné</h3>
+        <p>Un parcours de formation complet et un point régulier avec Angel, le fondateur.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-n">03</span>
+        <h3>Durable</h3>
+        <p>Chaque restaurant que vous nous confiez construit un revenu qui s'inscrit dans le temps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LA MAISON -->
+<section id="maison">
+  <div class="container maison-grid">
+    <div class="reveal">
+      <p class="s-label">La maison Conviva</p>
+      <h2 class="s-title">L'art de ne jamais<br><em>manquer une table</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">
+        Conviva Voice est née d'un constat simple&nbsp;: en plein coup de feu, le téléphone sonne dans le vide, et le client ne rappelle pas.
+        Sofia, notre hôtesse vocale, décroche à la troisième sonnerie, prend la table en français naturel et l'inscrit dans l'agenda — à 12&nbsp;h&nbsp;45 comme à 22&nbsp;h&nbsp;40.
+      </p>
+      <p class="s-body" style="margin-top:1rem;">
+        Nous travaillons pour les restaurants indépendants, ceux qui tiennent à leur accueil. Et nous voulons être représentés par des personnes qui leur ressemblent.
+      </p>
+    </div>
+    <div class="values reveal">
+      <div class="value">
+        <h3>Le respect <em>du métier</em></h3>
+        <p>Un restaurateur a peu de temps et beaucoup de sollicitations. On passe entre les services, on écoute avant de parler, on respecte son rythme.</p>
+      </div>
+      <div class="value">
+        <h3>L'honnêteté <em>d'abord</em></h3>
+        <p>On dit ce que Sofia fait — et ce qu'elle ne fait pas. Aucun chiffre promis à la légère&nbsp;: on calcule avec les chiffres du restaurateur, pas avec les nôtres.</p>
+      </div>
+      <div class="value">
+        <h3>Une relation <em>qui dure</em></h3>
+        <p>Nous ne cherchons pas des ventes, mais des clients heureux qui restent. C'est vrai pour nos restaurants comme pour nos partenaires.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LE RÔLE -->
+<section id="role">
+  <div class="container">
+    <div class="reveal">
+      <p class="s-label">Le rôle</p>
+      <h2 class="s-title">Vous ouvrez la porte.<br><em>Nous faisons le reste.</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">Pas de vente forcée, pas de paperasse, pas de technique. Votre force, c'est la rencontre et la confiance. La nôtre, c'est tout ce qui vient après.</p>
+    </div>
+
+    <div class="role-split reveal">
+      <div class="role-col">
+        <h3>Votre part</h3>
+        <ol>
+          <li><b>Repérer</b> les restaurants de votre secteur pour qui Sofia a du sens.</li>
+          <li><b>Rencontrer</b> le gérant, entre deux services, et écouter ce qui lui complique la vie.</li>
+          <li><b>Faire écouter</b> l'enregistrement de démonstration, et faire le calcul avec ses propres chiffres.</li>
+          <li><b>Transmettre</b> à Conviva, en un clic, quand il est prêt.</li>
+        </ol>
+      </div>
+      <div class="role-col">
+        <h3>La part de Conviva</h3>
+        <ol>
+          <li><b>Signer</b> avec le restaurateur et préparer tous les documents.</li>
+          <li><b>Installer</b> Sofia en 48&nbsp;h, sur son numéro habituel.</li>
+          <li><b>Facturer</b> et gérer toute la relation administrative.</li>
+          <li><b>Accompagner</b> le restaurant dans la durée, pour qu'il reste.</li>
+        </ol>
+      </div>
+    </div>
+    <p class="role-note reveal">
+      Vous êtes <b>apporteur d'affaires indépendant</b>&nbsp;: ni salarié, ni commercial à objectifs imposés.
+      Vous ne signez rien, n'encaissez rien, ne négociez rien — et c'est précisément ce qui rend le rôle si léger.
+    </p>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours">
+  <div class="container">
+    <div class="reveal">
+      <p class="s-label">Le parcours</p>
+      <h2 class="s-title">De la première rencontre<br><em>au premier restaurant</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">Pas besoin d'avoir déjà vendu un logiciel. Nous vous donnons la méthode, les mots et les outils — et nous restons à vos côtés.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <span class="step-num">01 —</span>
+        <h3>On fait connaissance</h3>
+        <p>Un échange avec Angel, le fondateur&nbsp;: votre parcours, votre secteur, vos envies. Et toutes vos questions.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02 —</span>
+        <h3>Votre contrat, votre espace</h3>
+        <p>Un contrat d'apporteur clair, et votre accès personnel à l'espace partenaire.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03 —</span>
+        <h3>Quatre semaines pour vous lancer</h3>
+        <p>Un parcours guidé&nbsp;: comprendre le restaurateur, connaître l'offre, réussir le premier rendez-vous, mener une démo.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04 —</span>
+        <h3>Sur le terrain, jamais seul</h3>
+        <p>Vos premières tournées, avec un point régulier pour faire le bilan et ajuster ensemble.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- L'ESPACE PARTENAIRE -->
+<section id="espace">
+  <div class="container espace-grid">
+    <div class="reveal">
+      <p class="s-label">L'espace partenaire</p>
+      <h2 class="s-title">Un outil pensé<br><em>pour le terrain</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">Tout ce dont vous avez besoin tient dans votre téléphone. Vous vous concentrez sur les rencontres&nbsp;; l'espace s'occupe de la mémoire.</p>
+      <ul class="espace-list">
+        <li><b>Vos prospects réservés à votre nom</b>&nbsp;: chaque restaurant que vous enregistrez vous est attribué, et le reste tant que vous le suivez.</li>
+        <li><b>Les relances au bon moment</b>&nbsp;: l'accueil vous montre chaque matin qui rappeler.</li>
+        <li><b>La formation, les fiches et le mémo</b>&nbsp;: à portée de main avant chaque rendez-vous.</li>
+        <li><b>Le suivi de vos restaurants et de vos gains</b>, en temps réel.</li>
+      </ul>
+      <div style="margin-top:2rem;">
+        <a href="https://conviva-partenaires.netlify.app/" class="btn-line">Déjà partenaire&nbsp;? Se connecter</a>
+      </div>
+    </div>
+
+    <div class="app reveal" aria-label="Aperçu illustratif de l'espace partenaire">
+      <div class="app-bar"><i></i><i></i><i></i><span>Espace partenaire</span></div>
+      <div class="app-tabs"><b>Mes prospects</b><span>Accueil</span><span>Formation</span><span>Documents</span><span>Mémo</span></div>
+      <div class="app-body">
+        <p class="app-hint">Aujourd'hui&nbsp;: 2 relances prévues</p>
+        <div class="app-row">
+          <span class="app-name">Le Petit Comptoir</span>
+          <span class="app-meta">Bistrot · gérant vu mardi · relance J+2</span>
+          <span class="app-tag hot">Démo prévue</span>
+        </div>
+        <div class="app-row">
+          <span class="app-name">Brasserie des Halles</span>
+          <span class="app-meta">Deux services pleins · calcul fait avec lui</span>
+          <span class="app-tag">Démo faite</span>
+        </div>
+        <div class="app-row">
+          <span class="app-name">Maison Lacombe</span>
+          <span class="app-meta">Transmis à Conviva · installation en cours</span>
+          <span class="app-tag done">Transmis</span>
+        </div>
+        <div class="app-row">
+          <span class="app-name">La Table d'Hugo</span>
+          <span class="app-meta">Passer entre 15 h et 17 h · demander le patron</span>
+          <span class="app-tag">Contacté</span>
+        </div>
+        <p class="app-caption">Illustration — noms fictifs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVENU (sans chiffres) -->
+<section id="revenu">
+  <div class="container">
+    <div class="reveal">
+      <p class="s-label">Ce que vous construisez</p>
+      <h2 class="s-title">Un revenu qui se construit,<br><em>restaurant après restaurant</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">Votre rémunération suit une logique simple&nbsp;: elle récompense chaque restaurant que vous nous confiez, et elle grandit avec la confiance qu'il nous accorde.</p>
+    </div>
+    <div class="revenu-grid reveal">
+      <div class="revenu-item">
+        <h3>Reconnu <em>à chaque signature</em></h3>
+        <p>Chaque restaurant que vous transmettez et qui rejoint Conviva est rémunéré. Votre travail de terrain se voit, et il compte.</p>
+      </div>
+      <div class="revenu-item">
+        <h3>Un revenu <em>qui dure</em></h3>
+        <p>Quand un restaurateur s'engage avec nous dans la durée, votre rémunération l'accompagne&nbsp;: les maisons que vous avez ouvertes continuent de travailler pour vous, mois après mois.</p>
+      </div>
+      <div class="revenu-item">
+        <h3>Clair <em>et suivi</em></h3>
+        <p>Tout est écrit dans votre contrat, et visible à tout moment dans votre espace partenaire. Pas de zone grise, pas de surprise.</p>
+      </div>
+    </div>
+    <div class="revenu-box reveal">
+      <p><b>Les conditions détaillées vous sont présentées de vive voix</b>, lors de notre premier échange, et remises avec votre dossier partenaire. Ici, nous parlons d'abord de ce qui compte&nbsp;: le métier, et la façon de bien le faire.</p>
+      <a href="#candidature" class="btn-fill">Recevoir le dossier</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILS -->
+<section id="profils">
+  <div class="container">
+    <div class="reveal">
+      <p class="s-label">Pour qui</p>
+      <h2 class="s-title">Vous avez du réseau,<br><em>on a la méthode</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">Le Cercle accueille des parcours très différents. Ce qui les réunit&nbsp;: le goût du contact et la connaissance de leur territoire.</p>
+    </div>
+    <div class="profils-grid reveal">
+      <div class="profil">
+        <h3>Ancien de la restauration</h3>
+        <p>Serveur, maître d'hôtel, chef, gérant&nbsp;: vous parlez la langue du métier et vous savez quand passer.</p>
+      </div>
+      <div class="profil">
+        <h3>Commercial indépendant</h3>
+        <p>Vous visitez déjà des professionnels&nbsp;: Sofia complète naturellement votre carte.</p>
+      </div>
+      <div class="profil">
+        <h3>Fournisseur ou prestataire CHR</h3>
+        <p>Vins, produits, équipements, conseil&nbsp;: vous êtes déjà reçu par les gérants.</p>
+      </div>
+      <div class="profil">
+        <h3>Freelance bien implanté</h3>
+        <p>Vous connaissez votre ville, ses adresses et ceux qui les tiennent.</p>
+      </div>
+      <div class="profil">
+        <h3>En reconversion</h3>
+        <p>Vous cherchez une activité autonome, utile, avec un vrai accompagnement au départ.</p>
+      </div>
+      <div class="profil">
+        <h3>Simplement passionné</h3>
+        <p>Vous aimez les bonnes tables et ceux qui les font vivre. C'est déjà un excellent début.</p>
+      </div>
+    </div>
+    <p class="profils-must reveal"><b>Ce que nous attendons&nbsp;:</b> du sérieux, de la constance et de l'honnêteté envers les restaurateurs. <b>Ce dont vous n'avez pas besoin&nbsp;:</b> de compétences techniques — Conviva s'occupe de toute l'installation.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container faq-grid">
+    <div class="reveal">
+      <p class="s-label">Questions fréquentes</p>
+      <h2 class="s-title">Avant de <em>nous rejoindre</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">Une autre question&nbsp;? Angel y répond volontiers&nbsp;: <a href="tel:+33613990113" class="nowrap" style="color:var(--terra);text-decoration:none;">06&nbsp;13&nbsp;99&nbsp;01&nbsp;13</a>.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>Dois-je savoir vendre&nbsp;?</summary>
+        <p>Non. Votre rôle n'est pas de conclure une vente, mais d'obtenir l'étape suivante&nbsp;: un nom, un rendez-vous, une écoute de la démo. La formation vous donne la méthode et les mots, pas à pas.</p>
+      </details>
+      <details>
+        <summary>Quel statut faut-il&nbsp;?</summary>
+        <p>Vous exercez en indépendant, dans le cadre d'un contrat d'apporteur d'affaires. Nous vous expliquons lors du premier échange comment démarrer simplement si vous n'avez pas encore de statut.</p>
+      </details>
+      <details>
+        <summary>Combien de temps faut-il y consacrer&nbsp;?</summary>
+        <p>C'est vous qui décidez. L'activité s'organise en quelques demi-journées de terrain choisies par vous, et peut se mener en complément d'une autre activité.</p>
+      </details>
+      <details>
+        <summary>Où vais-je prospecter&nbsp;?</summary>
+        <p>Dans le secteur que vous connaissez&nbsp;: une rue, un quartier, une ville. Chaque restaurant que vous enregistrez dans votre espace vous est réservé tant que vous le suivez.</p>
+      </details>
+      <details>
+        <summary>Comment suis-je rémunéré&nbsp;?</summary>
+        <p>Votre rémunération récompense chaque restaurant signé et s'inscrit dans la durée quand le restaurateur s'engage. Le barème complet vous est présenté lors du premier échange et figure noir sur blanc dans votre contrat.</p>
+      </details>
+      <details>
+        <summary>Je suis déjà partenaire&nbsp;: où me connecter&nbsp;?</summary>
+        <p>Votre espace est accessible à tout moment depuis le bouton <a href="https://conviva-partenaires.netlify.app/">Connexion</a>, en haut de chaque page, avec votre code d'accès personnel.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CANDIDATURE -->
+<section id="candidature">
+  <div class="container cand-grid">
+    <div class="reveal">
+      <p class="s-label">Rejoindre le Cercle</p>
+      <h2 class="s-title">Parlons-en,<br><em>simplement</em></h2>
+      <div class="s-rule"></div>
+      <p class="s-body">Laissez-nous vos coordonnées&nbsp;: Angel vous recontacte personnellement pour un premier échange et vous remet le dossier partenaire complet. Sans engagement.</p>
+      <div class="cand-direct">
+        <a href="tel:+33613990113"><span>Par téléphone</span>06&thinsp;13&thinsp;99&thinsp;01&thinsp;13</a>
+        <a href="mailto:contact@convivavoice.fr?subject=Le%20Cercle%20%E2%80%94%20devenir%20partenaire"><span>Par e-mail</span>contact@convivavoice.fr</a>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <form class="cand-form" id="cercle-form" name="cercle-candidature" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="cercle-candidature">
+        <p style="display:none"><label>Ne pas remplir <input name="bot-field"></label></p>
+        <div class="cand-row">
+          <input class="cand-input" type="text" name="prenom" placeholder="Prénom" autocomplete="given-name" required>
+          <input class="cand-input" type="text" name="nom" placeholder="Nom" autocomplete="family-name" required>
+        </div>
+        <div class="cand-row">
+          <input class="cand-input" type="email" name="email" placeholder="E-mail" autocomplete="email" required>
+          <input class="cand-input" type="tel" name="telephone" placeholder="Téléphone" autocomplete="tel" required>
+        </div>
+        <input class="cand-input" type="text" name="secteur" placeholder="Votre ville ou secteur" required>
+        <select class="cand-input" name="profil" required>
+          <option value="" disabled selected>Votre parcours</option>
+          <option>Ancien de la restauration</option>
+          <option>Commercial indépendant</option>
+          <option>Fournisseur ou prestataire CHR</option>
+          <option>Freelance / consultant</option>
+          <option>En reconversion</option>
+          <option>Autre</option>
+        </select>
+        <textarea class="cand-input" name="message" placeholder="Quelques mots sur vous (facultatif)"></textarea>
+        <button type="submit" class="btn-fill" id="cercle-submit">Recevoir le dossier partenaire</button>
+        <p class="cand-note">Vos données servent uniquement à vous recontacter au sujet du Cercle. <a href="/rgpd" style="color:inherit;">Données personnelles</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-top">
+    <div>
+      <svg width="176" height="44" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" aria-label="ConvivaVoice" role="img">
+        <g>
+          <circle cx="40" cy="40" r="36" fill="#B84A2A"/>
+          <rect x="28" y="19" width="24" height="5" fill="#FDFCFA" opacity="0.50"/>
+          <rect x="22" y="28" width="36" height="5" fill="#FDFCFA" opacity="0.75"/>
+          <rect x="17" y="37" width="46" height="6" fill="#FDFCFA" opacity="1.0"/>
+          <rect x="22" y="47" width="36" height="5" fill="#FDFCFA" opacity="0.75"/>
+          <rect x="28" y="56" width="24" height="5" fill="#FDFCFA" opacity="0.50"/>
+        </g>
+        <text x="90" y="54" font-family="Fraunces, Georgia, serif" font-size="38" font-weight="400"><tspan fill="#F8F5EF">Conviva</tspan><tspan fill="#B84A2A" font-style="italic">Voice</tspan></text>
+      </svg>
+      <p class="f-tag">L'art de ne jamais manquer une table.</p>
+    </div>
+    <div class="f-col">
+      <p class="f-col-h">Le Cercle</p>
+      <a href="#candidature">Rejoindre le Cercle</a>
+      <a href="https://conviva-partenaires.netlify.app/">Espace partenaire — connexion</a>
+      <a href="/">Découvrir Sofia</a>
+    </div>
+    <div class="f-col">
+      <p class="f-col-h">Informations</p>
+      <a href="/cgv">Conditions générales de vente</a>
+      <a href="/rgpd">Données personnelles</a>
+      <a href="/mentions-legales">Mentions légales</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <p>Angel Cholé — entrepreneur individuel · Conviva Voice · SIREN 931&nbsp;400&nbsp;832 · APE 62.01Z<br>
+       173 rue de Courcelles, 75017 Paris · TVA non applicable, art. 293&nbsp;B du CGI</p>
+    <p>© 2026 Conviva Voice — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script>
+// Apparition au défilement
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('on'), i * 90);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Défilement doux vers les ancres
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+
+// Suivi des clics vers l'espace partenaire
+document.querySelectorAll('a[href^="https://conviva-partenaires"]').forEach(a => {
+  a.addEventListener('click', () => {
+    if (typeof gtag === 'function') gtag('event', 'partner_login_click', { event_category: 'cercle' });
+  });
+});
+
+// Formulaire Netlify Forms — candidature
+const cForm = document.getElementById('cercle-form');
+const cSubmit = document.getElementById('cercle-submit');
+if (cForm) {
+  cForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (typeof gtag === 'function') gtag('event', 'partner_application', { event_category: 'conversion', event_label: 'le_cercle' });
+    cSubmit.disabled = true;
+    cSubmit.textContent = 'Envoi en cours…';
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(cForm)).toString()
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      cSubmit.textContent = '✓ Merci — Angel revient vers vous personnellement';
+      cSubmit.style.background = '#1A6B4A';
+      cForm.querySelectorAll('input, select, textarea, button').forEach(i => i.disabled = true);
+    } catch (err) {
+      cSubmit.textContent = 'Réessayez ou écrivez à contact@convivavoice.fr';
+      cSubmit.disabled = false;
+    }
+  });
+}
+</script>
+</body>
+</html>
